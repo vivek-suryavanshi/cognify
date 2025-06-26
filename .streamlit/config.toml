@@ -1,0 +1,13 @@
+[theme]
+
+# This sets the primary color for buttons, sliders, etc.
+primaryColor="#8B5CF6"
+
+# This sets the background color of the main content area
+backgroundColor="#FFFFFF"
+
+# This sets the color of text
+textColor="#31333F"
+
+# This sets the font
+font="sans serif"
