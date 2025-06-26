@@ -44,10 +44,10 @@ def clarify_vague_input(task_title: str) -> dict:
 def get_decomposition_plan(task_title: str) -> dict:
     """Calls an LLM to break down a specific task into a JSON plan."""
     if not client: return {"error": "API key not found."}
-    prompt = f"""You are a compassionate ADHD coach. The user's task is: "{task_title}". Create a gentle, 5-7 step plan.
-    Rules: 1. Start with a very easy "warm-up" step. 2. Make steps concrete and physical. 3. Include at least one break. 4. Keep the tone gentle. 5. You MUST respond with ONLY a valid JSON object.
-    The JSON structure: {{ "title": "User's Task Title", "steps": [ {{"text": "..."}} ] }}
-    """
+    prompt = f"""You are a compassionate productivity and friendly life coach. The user's task is: "{task_title}". Create a gentle, 4-5 step plan.
+        Rules: 1. Calm the user and comfort them that you are there for them. 2. Make steps concrete and physical. 3. Include at least one break. 4. Keep the tone gentle. 5. You MUST respond with ONLY a valid JSON object.
+        The JSON structure: {{ "title": "User's Task Title", "steps": [ {{"text": "..."}} ] }}
+        """
     st.info(f"🤖 **AI Agent:** Thinking about how to break down '{task_title}'...")
     try:
         response = client.chat.completions.create(model="gpt-4.1-nano", messages=[{"role": "user", "content": prompt}],
