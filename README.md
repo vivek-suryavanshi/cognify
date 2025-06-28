@@ -4,7 +4,7 @@
 
 Cognify is an intelligent web application that acts as an AI-powered executive function assistant. It's designed for anyone who has ever felt stuck or overwhelmed by a large task. By using a multi-step agentic workflow, Cognify works with the user to transform vague goals into clear, actionable, and gentle step-by-step plans.
 
-**Live Demo:** [Link to your Deployed Streamlit App]
+**Live Demo:** https://cognify-app.streamlit.app
 
 ---
 
