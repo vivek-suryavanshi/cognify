@@ -119,8 +119,10 @@ if st.session_state.task_plan is None:
         with st.container(border=True):
             st.markdown("#### Is this goal clearer?")
             st.write("Here's the AI's suggestion. Feel free to edit it before creating a plan.")
-            clarified_input = st.text_input("Suggested Goal:", value=st.session_state.clarified_task,
-                                            label_visibility="collapsed")
+            # clarified_input = st.text_input("Suggested Goal:", value=st.session_state.clarified_task,
+            #                                 label_visibility="collapsed")
+            clarified_input = st.text_area("Suggested Goal:", value=st.session_state.clarified_task,
+                                           label_visibility="collapsed", height=70)
             if st.button(f"✅ Create Plan with This Goal", use_container_width=True, type="primary"):
                 with st.spinner("Our friendly AI is creating your plan..."):
                     result = get_decomposition_plan(clarified_input)
