@@ -4,8 +4,7 @@
 
 Cognify is an AI-powered executive function assistant designed to help users navigate overwhelming tasks by breaking them down into clear, manageable steps. It leverages a multi-agent system built with **CrewAI** and **LangChain** to provide a supportive, human-in-the-loop planning experience.
 
-https://github.com/user-attachments/assets/05a0134f-0136-4076-9c4c-7032906d4e4c
-
+App URL : https://cognify-app.streamlit.app
 
 ## 🤔 The Problem
 
