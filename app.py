@@ -1,5 +1,12 @@
 # cognify_crewai.py
 
+
+# Fix for ChromaDB/SQLite3 compatibility issue
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
+
 # --- Core Libraries ---
 import streamlit as st  # The web framework used to build the user interface
 import os               # Used to interact with the operating system, primarily for API keys
@@ -10,11 +17,6 @@ import time             # Used for creating artificial delays to improve user ex
 # These are the fundamental building blocks for creating AI agent crews
 from crewai import Agent, Task, Crew, Process
 from langchain_openai import ChatOpenAI # This provides the connection to OpenAI's models
-
-# Fix for ChromaDB/SQLite3 compatibility issue
-__import__('pysqlite3')
-import sys
-sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 # --- Streamlit Page Configuration ---
 # Sets the title, icon, and layout for the web application page
