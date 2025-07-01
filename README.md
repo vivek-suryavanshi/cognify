@@ -1,56 +1,43 @@
-# 🧠 Cognify
+# Cognify 🧠 – Clarity from Chaos, powered by Agentic AI
 
-### Clarity for the overwhelmed mind.
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://your-app-url-here.streamlit.app/)
 
-Cognify is an intelligent web application that acts as an AI-powered executive function assistant. It's designed for anyone who has ever felt stuck or overwhelmed by a large task. By using a multi-step agentic workflow, Cognify works with the user to transform vague goals into clear, actionable, and gentle step-by-step plans.
+Cognify is an AI-powered executive function assistant designed to help users navigate overwhelming tasks by breaking them down into clear, manageable steps. It leverages a multi-agent system built with **CrewAI** and **LangChain** to provide a supportive, human-in-the-loop planning experience.
 
-**Live Demo:** https://cognify-app.streamlit.app
-
----
-
-### Key Features & Agentic Workflow
-
-Cognify uses a unique, three-step agentic workflow that feels like a natural conversation:
-
-1.  **Clarify:** The agent first interprets a user's vague input (e.g., "deal with my messy room") and proposes a more concrete, actionable goal ("Organize the desk and closet in your bedroom").
-2.  **Decompose:** Once a goal is agreed upon, the agent breaks it down into a series of small, gentle sub-tasks, including built-in breaks and warm-up activities.
-3.  **Refine:** The agent maintains the context of the generated plan, allowing users to provide feedback in natural language (e.g., "make step 4 shorter"), and intelligently edits the plan in response.
-
-### Tech Stack
-
-* **Language:** Python
-* **Framework:** Streamlit
-* **AI:** OpenAI API (gpt-4o-mini)
-* **Core Logic:** Custom stateful agentic workflow
-
-### Running the App Locally
-
-1.  **Clone the repository:**
-    ```bash
-    git clone [your-repo-url]
-    cd cognify-app
-    ```
-2.  **Create and activate a virtual environment:**
-    ```bash
-    python -m venv .venv
-    source .venv/bin/activate
-    ```
-3.  **Install the dependencies:**
-    ```bash
-    pip install -r requirements.txt
-    ```
-4.  **Set up your API key:**
-    Create a file at `.streamlit/secrets.toml` and add your OpenAI API key:
-    ```toml
-    OPENAI_API_KEY = "your-key-here"
-    ```
-5.  **Run the app:**
-    ```bash
-    streamlit run app.py
-    ```
-
-### Future Vision
-
-This MVP was built with Streamlit to prove the core concept. The next phase of development will involve migrating the application to a more robust, production-grade architecture, such as a FastAPI backend with a modern frontend framework.
+https://github.com/user-attachments/assets/05a0134f-0136-4076-9c4c-7032906d4e4c
 
 
+## 🤔 The Problem
+
+We all know the feeling: staring at a task that’s too big, too vague, and you don’t know where to start. This mental clutter can lead to procrastination and overwhelm. Cognify is designed to be a gentle partner in these moments, guiding you from a state of chaos to a clear, actionable plan.
+
+## ✨ How It Works
+
+Cognify uses a collaborative team of specialized AI agents to transform a user's vague goal into a concrete plan. The entire process is conversational and adaptive.
+
+1️⃣ **The Clarifier Agent:** A user starts by entering a thought or goal (e.g., "I want to buy a new phone"). The Clarifier analyzes this and proposes a more specific, actionable goal (e.g., "Research and purchase a specific phone model within your budget").
+
+2️⃣ **The Planner Agent:** Once the user accepts the clarified goal, the Planner, acting as a compassionate productivity coach, designs a gentle, step-by-step plan. This plan includes concrete actions and scheduled breaks to prevent burnout.
+
+3️⃣ **The Refiner Agent:** Plans often need to change. The user can have a conversation with the Refiner Agent (e.g., "my budget is $500") to modify, add, or remove steps. The agent intelligently integrates the feedback, ensuring the plan remains relevant and helpful.
+
+## 🛠️ Tech Stack Showcase
+
+This project utilizes a modern, AI-native stack to create a sophisticated agentic workflow.
+
+* **AI Frameworks:** **CrewAI** & **LangChain** (For defining agents, tasks, and managing the collaborative process).
+* **LLM:** **OpenAI** (GPT-4).
+* **Interface:** **Streamlit** & **Python** (For building the interactive web application).
+
+## 🚀 Running Locally
+
+To run Cognify on your own machine, follow these steps:
+
+### 1. Prerequisites
+* Python 3.8+
+* An OpenAI API Key
+
+### 2. Clone the Repository
+```bash
+git clone [https://github.com/your-username/your-cognify-repo.git](https://github.com/your-username/your-cognify-repo.git)
+cd your-cognify-repo
