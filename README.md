@@ -38,5 +38,5 @@ To run Cognify on your own machine, follow these steps:
 
 ### 2. Clone the Repository
 ```bash
-git clone [https://github.com/your-username/your-cognify-repo.git](https://github.com/your-username/your-cognify-repo.git)
-cd your-cognify-repo
+git clone https://github.com/vivek-suryavanshi/cognify.git
+cd cognify
