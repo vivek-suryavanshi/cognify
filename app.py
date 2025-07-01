@@ -11,6 +11,11 @@ import time             # Used for creating artificial delays to improve user ex
 from crewai import Agent, Task, Crew, Process
 from langchain_openai import ChatOpenAI # This provides the connection to OpenAI's models
 
+# Fix for ChromaDB/SQLite3 compatibility issue
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 # --- Streamlit Page Configuration ---
 # Sets the title, icon, and layout for the web application page
 st.set_page_config(
