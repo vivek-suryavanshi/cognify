@@ -1,2 +1,4 @@
 openai
 streamlit
+crewai
+langchain-openai
