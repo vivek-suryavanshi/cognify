@@ -1,6 +1,6 @@
 # Cognify 🧠 – Clarity from Chaos, powered by Agentic AI
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://your-app-url-here.streamlit.app/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://cognify-app.streamlit.app)
 
 Cognify is an AI-powered executive function assistant designed to help users navigate overwhelming tasks by breaking them down into clear, manageable steps. It leverages a multi-agent system built with **CrewAI** and **LangChain** to provide a supportive, human-in-the-loop planning experience.
 
